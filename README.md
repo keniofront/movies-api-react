@@ -1,12 +1,14 @@
-# 🎬 Sci-Fi Movies Showcase
+# 🎬 Movies API React
 
 > Mostruário de filmes de ficção científica desenvolvido para fins de estudo, consumindo dados da API OMDb para exibir informações detalhadas sobre filmes do gênero.
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-GitHub%20Pages-181717?style=for-the-badge&logo=github)](https://[seu-usuario].github.io/[nome-do-repositorio])
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-GitHub%20Pages-181717?style=for-the-badge&logo=github)](https://keniofront.github.io/movies-api-react/)
+
+![Preview 01](./docs/preview.jpg)
 
 ## 📋 Sobre o Projeto
 
-Projeto pessoal desenvolvido como estudo prático de React e consumo de APIs externas. A aplicação apresenta uma interface moderna e responsiva para explorar filmes de ficção científica, demonstrando habilidades em desenvolvimento front-end e integração com APIs.
+Projeto pessoal desenvolvido como estudo prático de React e consumo de APIs externas. A aplicação apresenta uma simples interface responsiva para explorar filmes de ficção científica, demonstrando habilidades em desenvolvimento front-end e integração com APIs.
 
 ## 🚀 Tecnologias Utilizadas
 
