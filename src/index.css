@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #3b3856;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+/* ======================================== */
+/* HEADER COMPONENT */
+
+.header {
+  height: 65px;
+  margin-bottom: 1rem;
+  color: white;
+  background-color: #262432;
+}
+
+.header a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.socialContainer,
+.socialItem {
+  display: flex;
+}
+
+.socialContainer {
+  gap: 1rem;
+}
+
+.socialItem {
+  gap: 6px;
+  transition: background 0.3s ease;
+}
+
+.socialItem:hover,
+.socialItem:hover a {
+  color: #8a84ef;
+}
+
+/* ======================================== */
+
+/* ======================================== */
+/* HOME SECTION */
+
+.container h1 {
+  margin: 2rem 0;
+  color: white;
+  text-align: center;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  color: white;
+  background-color: #262432;
+  border: 1px solid white;
+  border-radius: 24px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movieCard img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 24px;
+}
+
+.movieCard h3 {
+  display: -webkit-box; /* necessário para line-clamp */
+  height: 2.4rem; /* altura equivalente a 2 linhas */
+  margin: 1.2rem;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  text-overflow: ellipsis; /* adiciona os "..." */
+  -webkit-line-clamp: 2; /* número máximo de linhas */
+  -webkit-box-orient: vertical; /* orientação vertical do box */
+}
+
+.btnDetails {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: #8a84ef;
+  transition: background 0.2s ease-in-out;
+}
+
+.btnDetails:hover {
+  background-color: #262432;
+}
+
+/* ======================================== */
+
+/* ======================================== */
+/* DETAIL SECTION */
+
+.descriptionContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #262432;
+  border-radius: 24px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.imgContainer {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 16px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: start;
+  justify-content: start;
+  color: white;
+}
+
+.contentContainer h1 {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.contentContainer strong {
+  color: #8a84ef;
+}
+
+.btnBack {
+  display: flex;
+  gap: 8px;
+  margin: 2rem 0;
+  padding: 10px 16px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  background-color: #8a84ef;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btnBack:hover {
+  background-color: #262432;
+}
+
+/* ======================================== */
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0 1rem;
+  }
+
+  .catalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .descriptionContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .container h1 {
+    width: 80%;
+    margin: 24px auto;
+  }
+
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+
+  .movieCard {
+    margin: 16px 24px;
+  }
+
+  .movieCard img {
+    height: 380px;
+  }
+
+  .descriptionContainer {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
